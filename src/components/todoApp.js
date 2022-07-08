@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 
 
 export default function TodoApp() {
@@ -14,7 +15,7 @@ export default function TodoApp() {
         <div className="todoContainer">
 
             <form className="todoForm">
-                <input className="todoInput" value={title} />
+                <input className="todoInput" defaultValue= "lopez" />
                 <input onclick={handleClick} className="buttonCreate" type="submit" value="create todo" />
                 {title}
             </form>
