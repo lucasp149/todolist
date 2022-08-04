@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto:wght@300&display=swap');
+
+body {
+    background-color: rgba(128, 128, 128, 0.05);
+}
+
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 10vh;
+}
+
+.todoForm {
+   display: flex;
+   justify-content: space-between;
+   gap: 1vw;
+}
+
+.todoForm .todoInput{
+    width: 80%;
+    flex-grow: 1;
+}
+
+.generalContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    width: 80%;
+    margin-top: 2vh;
+    gap: 1vh;
+}
+
+@media (max-width: 600px ) {
+    .generalContainer {
+        width: 100%;
+    }
+    
+}
+
+.button {
+    cursor: pointer;
+    border:none;
+    border-radius: 3px;
+    background-color: azure;
+    color:rgb(76, 71, 71);
+    font-family: 'Roboto', sans-serif;
+    border: solid 1px rgb(206, 195, 195);
+}
+
+.button:hover {
+    border: solid 1px rgb(71, 64, 64);
+}
+
+.todoElement {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px orange;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 1vw;
+}
+
+.todoElement:hover {
+    border: solid 1px rgb(160, 106, 5);
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-right: 0.5vh;
+}
+
+.edit {
+    background-color: rgba(20, 20, 187, 0.281);
+}
+
+.delete {
+    background-color: rgba(255, 0, 0, 0.329);
+}
+
+.todo {
+    background-color: white;
+}
+
